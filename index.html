@@ -4,16 +4,21 @@
         <meta charset="utf-8" />
         <title>Meet Brian</title>
         <meta name="viewport" content="width=device-width" />
+        <!-- Need DOM nodes to exist for script to grab references -->
+        <script defer src="./scripts/navigation.js"></script>
     </head>
     <body>
         <header>
-            <nav></nav>
-            <nav></nav>
-            <nav></nav>
+            <nav class="body-nav-directory">
+                <ol class="body-nav-directory-list">
+                    <li id="body-nav-about-page">About me</li>
+                    <li id="body-nav-contact-page">Contact me</li>
+                </ol>
+            </nav>
         </header>
         <main>
             <section>
-                <iframe></iframe>
+                <iframe id="body-main-content-panel" src="./pages/about_me/about_me.html"></iframe>
             </section>
         </main>
         <footer></footer>
